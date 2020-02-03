@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import {  Redirect } from 'react-router-dom';
 import Nav from '../components/Nav/Nav'
 import Title from '../components/Title/Title'
-import Content from '../components/Tabs/Tabs'
+import TabContent from '../components/Tabs/Tabs'
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +15,7 @@ class Home extends Component {
             <div>
                 <Nav />
                 <Title />
-                <Content />
+                <TabContent />
                 
 
             </div>
