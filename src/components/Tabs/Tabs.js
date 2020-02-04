@@ -12,8 +12,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import CardMedia from "@material-ui/core/CardMedia";
-import img1 from "../../static/images/1280px-React-icon.svg.png";
+import Link from '@material-ui/core/Link';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -88,22 +87,25 @@ export default function SimpleTabs() {
                     <Tab label="Contact Information" {...a11yProps(4)} />
                 </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0} id="aboutTab">
-                <Card className={classes.root}>
+            <TabPanel value={value} index={0} >
+                <Card className={classes.root} id='aboutTab'>
                     <CardContent>
                         <Typography variant="h3" component="h2">
                             About Me
             </Typography>
                         <hr></hr>
                         <br></br>
-                        <Typography>
-                            Motivated Full Stack Web Developer with a strong background in
-                            communications. Brings hard work and dedication inspired by
-                            encountering problems and finding an effective solution. Strong
-                            collaboration skills from previous professional experience. Excels
-                            at customer service and finding solutions to every situation in
-                            the workplace.
-            </Typography>
+                        <Typography variant="h6" component="h4">
+                            <Box lineHeight={2.5} m={1}>
+
+                                Motivated Full Stack Web Developer with a strong background in
+                                communications. Brings hard work and dedication inspired by
+                                encountering problems and finding an effective solution. Strong
+                                collaboration skills from previous professional experience. Excels
+                                at customer service and finding solutions to every situation in
+                                the workplace.
+                            </Box>
+                        </Typography>
                     </CardContent>
                 </Card>
             </TabPanel>
@@ -122,93 +124,87 @@ export default function SimpleTabs() {
                                     </Typography>
                                 <Typography
                                     variant="body2"
-                                    color="textSecondary"
+                                    color="textPrimary"
                                     component="p"
                                 >
-                                    Patient First is a health data collection app. It allows
-                                    users to quickly and easily upload health-related data, view
-                                    trends and share with their primary care providers. Allowing
-                                    for providers to have more data on a patient’s daily health
-                                    trends to better diagnose/treat their conditions. This
-                                    application uses React, MongoDb and Passport.Js.
-                  </Typography>
+                                    <Box lineHeight={2} m={1}>
+
+                                        Patient First is a health data collection app. It allows
+                                        users to quickly and easily upload health-related data, view
+                                        trends and share with their primary care providers. Allowing
+                                        for providers to have more data on a patient’s daily health
+                                        trends to better diagnose/treat their conditions. This
+                                        application uses React, MongoDb and Passport.Js.
+                                    </Box>
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" href='https://github.com/maleszewskid/Project-3'>
                                 GitHub
                 </Button>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" href='https://patient-first.herokuapp.com/'>
                                 Live Site
                 </Button>
                         </CardActions>
                     </Card>
                     <Card className={classes.root} id="apCard">
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image="/static/images/cards/contemplative-reptile.jpg"
-                                title="Contemplative Reptile"
-                            />
+
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
                                     iPlaylist
                   </Typography>
                                 <Typography
                                     variant="body2"
-                                    color="textSecondary"
+                                    color="textPrimary"
                                     component="p"
                                 >
-                                    iPlaylist is a fully customizable web application where
-                                    users can create their own playlists and contribute to the
-                                    community playlist. Users are able to sign up, search for
-                                    their favorite songs, create unique playlists, add them to a
-                                    public playlist, and upvote and downvote songs. Uses:
-                                    Javascript, JQuery, mySQL, NodeJs, Passport.Js, NodeJs,
-                                    Deezer API
-                  </Typography>
+                                    <Box lineHeight={2} m={1}>
+
+                                        iPlaylist is a fully customizable web application where
+                                        users can create their own playlists and contribute to the
+                                        community playlist. Users are able to sign up, search for
+                                        their favorite songs, create unique playlists, add them to a
+                                        public playlist, and upvote and downvote songs. Uses:
+                                        Javascript, JQuery, mySQL, NodeJs, Passport.Js, NodeJs,
+                                        Deezer API
+                                        </Box>
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" href='https://github.com/Slevy239/iPlaylist'>
                                 GitHub
                 </Button>
-                            <Button size="small" color="primary" href="">
+                            <Button size="small" color="primary" href="https://iplaylist-2019.herokuapp.com/login">
                                 Live Site
                 </Button>
                         </CardActions>
                     </Card>
                     <Card className={classes.root} id="apCard">
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image="/static/images/cards/contemplative-reptile.jpg"
-                                title="Contemplative Reptile"
-                            />
+
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    WebScrape
+                                    GoogleBookSearch
                   </Typography>
                                 <Typography
                                     variant="body2"
-                                    color="textSecondary"
+                                    color="textPrimary"
                                     component="p"
                                 >
-                                    This application uses Cheerio to collect articles from the
-                                    Sports Section of the New York Times. The articles are then
-                                    stored in the Mongo Database as documents. Express allows
-                                    the application to display the information that is in the
-                                    database. Once displayed, the user can saved articles and
-                                    add/delete comments that are associated with the given
-                    article.{" "}
+                                    <Box lineHeight={2} m={1}>
+                                        GoogleBookSearch creates readings lists out of an API created in this application. Using React router, this application is a single page application with dynamic components Users are able to manipulate books to add, save and delete them from a given list.
+                                    </Box>
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" href='https://github.com/Slevy239/GoogleBookSearch'>
                                 GitHub
                 </Button>
-                            <Button size="small" color="primary" href="">
+                            <Button size="small" color="primary" href="https://react-bookshelf2020.herokuapp.com/">
                                 Live Site
                 </Button>
                         </CardActions>
@@ -217,39 +213,84 @@ export default function SimpleTabs() {
                 <Grid container spacing={3}>
                     <Card className={classes.root} id="apCard">
                         <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image="/static/images/cards/contemplative-reptile.jpg"
-                                title="Contemplative Reptile"
-                            />
+
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="h2">
-                                    WebScrape
+                                    Clicky Game
                                     </Typography>
                                 <Typography
                                     variant="body2"
-                                    color="textSecondary"
+                                    color="textPrimary"
                                     component="p"
                                 >
-                                    This application uses Cheerio to collect articles from the
-                                    Sports Section of the New York Times. The articles are then
-                                    stored in the Mongo Database as documents. Express allows
-                                    the application to display the information that is in the
-                                    database. Once displayed, the user can saved articles and
-                                    add/delete comments that are associated with the given
-                                    article.
-                                    </Typography>
+                                    <Box lineHeight={2} m={1}>
+                                        To begin, click an image and the first score is recored. Then the images get shuffled and the user has to pick an image that has previously not been clicked. This will continue until there are no more options left.
+                                    </Box>
+                                </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
+                            <Button size="small" color="primary" href='https://github.com/Slevy239/Clicky-Game'>
                                 GitHub
                 </Button>
-                            <Button size="small" color="primary" href="">
+                            <Button size="small" color="primary" href="https://clickgame-2020.herokuapp.com/">
                                 Live Site
                 </Button>
                         </CardActions>
                     </Card>
+                    <Card className={classes.root} id="apCard">
+                        <CardActionArea>
+
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    Eat Da Burger!
+                                    </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="textPrimary"
+                                    component="p"
+                                >
+                                    <Box lineHeight={2} m={1}>
+                                        A NodeJs, Express, Handlebars, and MySQL application that allows users to create items, store it in the database and update it's state.                                    </Box>
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" href='https://github.com/Slevy239/burger'>
+                                GitHub
+                </Button>
+                            <Button size="small" color="primary" href="https://eat-a-burger-2019.herokuapp.com/">
+                                Live Site
+                </Button>
+                        </CardActions>
+                    </Card>
+                    <Card className={classes.root} id="apCard">
+                        <CardActionArea>
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2">
+                                    Friend Finder
+                                    </Typography>
+                                <Typography
+                                    variant="body2"
+                                    color="textPrimary"
+                                    component="p"
+                                >
+                                    <Box lineHeight={2} m={1}>
+                                        This application works as a dating app, with 10 questions that assess the compatibility with an individual who has already completed the survey. Once the survey is completed, the users input is added to the API for future users to match. While this information is added, the user gets matched with someone who is already in the API, a picture and their name is presented.
+                                    </Box>
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions>
+                            <Button size="small" color="primary" href='https://github.com/Slevy239/FriendFinder'>
+                                GitHub
+                </Button>
+                            <Button size="small" color="primary" href="https://nameless-gorge-79367.herokuapp.com/">
+                                Live Site
+                </Button>
+                        </CardActions>
+                    </Card>
+
                 </Grid>
             </TabPanel>
             <TabPanel value={value} index={2} id="expTab">
@@ -300,13 +341,13 @@ export default function SimpleTabs() {
             </TabPanel>
             <TabPanel value={value} index={3} id="edTab">
                 <Card>
-                    <Typography variant="h3" component="h2">
+                    <Typography variant="h3" component="h2" id='EdTitle'>
                         Education
           </Typography>
                 </Card>
                 <br></br>
-                <Grid spacing={3}>
-                    <Card>
+                <Grid container spacing={3}>
+                    <Card id='EdCard'>
                         <CardContent>
                             <Typography gutterBottom variant="h4" component="h4">
                                 Villanova University
@@ -318,16 +359,18 @@ export default function SimpleTabs() {
                                 Bachelor of Liberal Arts in Communication
               </Typography>
                             <Typography>
-                                Focus in Media Studies. Produced audio for ‘Sankofa’, a student
-                                run film production that won Gold at the 2019 Student Academy
+                                <Box lineHeight={2} m={1}>
+                                    Focus in Media Studies. Produced audio for ‘Sankofa’, a student
+                                    run film production that won Gold at the 2019 Student Academy
                                 Awards for Documentary.
-              </Typography>
+                                </Box>
+                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
                 <br></br>
-                <Grid spacing={3}>
-                    <Card>
+                <Grid container spacing={3}>
+                    <Card id='EdCard'>
                         <CardContent>
                             <Typography gutterBottom variant="h4" component="h4">
                                 University of Pennsylvania
@@ -339,11 +382,14 @@ export default function SimpleTabs() {
                                 Coding Boot Camp
               </Typography>
                             <Typography>
-                                A 24-week intensive program focused on gaining technical
-                                programming skills in HTML5, CSS3, Javascript, JQuery,
-                                Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express,
-                                Handelbars.js & ReactJS.
-              </Typography>
+                                <Box lineHeight={2} m={1}>
+
+                                    A 24-week intensive program focused on gaining technical
+                                    programming skills in HTML5, CSS3, Javascript, JQuery,
+                                    Bootstrap, Firebase, Node Js, MySQL, MongoDB, Express,
+                                    Handelbars.js & ReactJS.
+                                </Box>
+                            </Typography>
                         </CardContent>
                     </Card>
                 </Grid>
@@ -362,7 +408,10 @@ export default function SimpleTabs() {
                         <CardContent>
                             <Typography variant="h5" component="h1">Email</Typography>
                             <br></br>
-                            <Typography>slevy239@gmail.com</Typography>
+                            <Link
+                                component='button'
+                                variant='h5'
+                            >slevy239@gmail.com</Link>
                         </CardContent>
                     </Card>
                     <br></br>
@@ -370,7 +419,10 @@ export default function SimpleTabs() {
                         <CardContent>
                             <Typography variant="h5" component="h5">Phone</Typography>
                             <br></br>
-                            <Typography>610-420-9311</Typography>
+                            <Link
+                                component='button'
+                                variant='h5'
+                            >610-420-9311</Link>
                         </CardContent>
                     </Card>
                     <br></br>
@@ -378,7 +430,10 @@ export default function SimpleTabs() {
                         <CardContent>
                             <Typography variant="h5" component="h5">LinkedIn</Typography>
                             <br></br>
-                            <Typography>https://www.linkedin.com/in/samuel-d-levy/</Typography>
+                            <Link
+                                component='button'
+                                variant='h5'
+                            >https://www.linkedin.com/in/samuel-d-levy/</Link>
                         </CardContent>
                     </Card>
                     <br></br>
@@ -386,7 +441,10 @@ export default function SimpleTabs() {
                         <CardContent>
                             <Typography variant="h5" component="h5">GitHub</Typography>
                             <br></br>
-                            <Typography>https://github.com/Slevy239</Typography>
+                            <Link
+                                component='button'
+                                variant='h5'
+                            >https://github.com/Slevy239</Link>
                         </CardContent>
                     </Card>
                 </Grid>
