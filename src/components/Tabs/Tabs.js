@@ -75,7 +75,7 @@ export default function SimpleTabs() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
-                    <Tab label="About Me" {...a11yProps(0)} />
+                    <Tab label="About Me" {...a11yProps(0)}  />
                     <Tab label="Applications" {...a11yProps(1)} />
                     <Tab label="Experience" {...a11yProps(2)} />
                     <Tab label="Education" {...a11yProps(3)} />
@@ -84,7 +84,7 @@ export default function SimpleTabs() {
 
                 </Tabs>
             </AppBar>
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={0} id='aboutTab'>
                 <Card className={classes.root}>
                     <CardContent>
                         <Typography variant="h5" component="h2">About Me</Typography>
@@ -101,7 +101,7 @@ export default function SimpleTabs() {
             </TabPanel>
             <TabPanel value={value} index={1}>
                 <Grid container spacing={3}>
-                    <Card className={classes.root}>
+                    <Card className={classes.root} id='apCard'>
                         <CardContent>
                             <Typography>Hello</Typography>
                         </CardContent>
