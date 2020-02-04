@@ -183,6 +183,18 @@
 div#apCard {
   width: 25%;
 }
+div#edTab {
+  width: 60%;
+  margin-left: 20%;
+}
+
+div#expCard {
+  width: 30%;
+}
+div#contactCard {
+  width: 35%;
+  margin-left: 33%;
+}
 
 h6.MuiTypography-root.MuiTypography-h6 {
   margin-top: 185%;
@@ -190,4 +202,8 @@ h6.MuiTypography-root.MuiTypography-h6 {
 .MuiList-padding {
   padding-top: 40px;
   padding-bottom: 8px;
+}
+
+#Company {
+  font-weight: 555;
 }

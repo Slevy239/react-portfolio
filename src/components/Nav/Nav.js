@@ -129,8 +129,8 @@ export default function PersistentDrawerLeft() {
                 <List>
                 <IconButton
                         color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
+                        aria-label="GitHub Profile"
+                        href='https://github.com/Slevy239'
                     >
                         <GitHubIcon />
                     </IconButton>
@@ -139,8 +139,8 @@ export default function PersistentDrawerLeft() {
                 <List>
                     <IconButton
                         color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
+                        aria-label="LinkedIn Profile"
+                        href='https://www.linkedin.com/in/samuel-d-levy/'
                     >
                         <LinkedInIcon />
                     </IconButton>
@@ -150,8 +150,8 @@ export default function PersistentDrawerLeft() {
                 <List>
                     <IconButton
                         color="inherit"
-                        aria-label="open drawer"
-                        edge="start"
+                        aria-label="Email"
+                        href='mailto: slevy239@gmail.com'
                     >
                         <EmailIcon />
                     </IconButton>
