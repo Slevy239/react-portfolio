@@ -172,8 +172,10 @@
   padding: 8px;
 }
 
-body {
-/* background-image: url(../src/assets/images/code-coding-computer-data-574071.jpg);
-background-repeat:no-repeat; */
-background-position: center center;
+.MuiPaper-root.MuiCard-root.makeStyles-root-125.MuiPaper-elevation1.MuiPaper-rounded {
+  width: 80%;
+  margin-left: 13%;
+}
+.MuiTypography-body1 {
+  font-size: 20px;
 }
