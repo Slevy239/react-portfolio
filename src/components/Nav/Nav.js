@@ -17,6 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -142,6 +143,17 @@ export default function PersistentDrawerLeft() {
                         edge="start"
                     >
                         <LinkedInIcon />
+                    </IconButton>
+
+                </List>
+                <Divider />
+                <List>
+                    <IconButton
+                        color="inherit"
+                        aria-label="open drawer"
+                        edge="start"
+                    >
+                        <EmailIcon />
                     </IconButton>
 
                 </List>
