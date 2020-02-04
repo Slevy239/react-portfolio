@@ -171,3 +171,9 @@
   font-size: 5em;
   padding: 8px;
 }
+
+body {
+/* background-image: url(../src/assets/images/code-coding-computer-data-574071.jpg);
+background-repeat:no-repeat; */
+background-position: center center;
+}

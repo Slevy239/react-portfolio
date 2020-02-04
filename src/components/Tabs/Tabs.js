@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import './react-tabs.css'
 
 
 class TabContent extends Component {
@@ -15,7 +16,7 @@ class TabContent extends Component {
                 <div style={{ width: '80%', margin: 'auto' }}>
                     <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
                         <CardText>
-                            <p>Motivated Full Stack Web Developer with a strong background in communications. Brings hard work
+                            <p className='bio'>Motivated Full Stack Web Developer with a strong background in communications. Brings hard work
                                         and dedication inspired by encountering problems and finding an effective solution. Strong
                                         collaboration skills from previous professional experience. Excels at customer service and
                         finding solutions to every situation in the workplace.</p>
@@ -93,7 +94,7 @@ class TabContent extends Component {
                         </CardTitle>
                                 <CardText>
                                     <h3>Quench USA Inc.</h3>
-                                    <h4>Job Title</h4>
+                                    <h4>scheduling Specialist</h4>
                                     <p>Handled technician scheduling for large metropolitan markets around the U.S. Primarily used
                                         spreadsheets to handle and manage schedule data. Worked in groups to tackle appointment backlog
                                         across multiple markets. Relayed information about products to technicians and customers. Gave
