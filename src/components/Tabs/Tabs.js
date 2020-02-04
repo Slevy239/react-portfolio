@@ -11,8 +11,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardMedia from '@material-ui/core/CardMedia';
+import img1 from '../../static/images/1280px-React-icon.svg.png'
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -75,7 +76,7 @@ export default function SimpleTabs() {
         <div className={classes.root}>
             <AppBar position="static">
                 <Tabs value={value} onChange={handleChange} aria-label="simple tabs example" centered>
-                    <Tab label="About Me" {...a11yProps(0)}  />
+                    <Tab label="About Me" {...a11yProps(0)} />
                     <Tab label="Applications" {...a11yProps(1)} />
                     <Tab label="Experience" {...a11yProps(2)} />
                     <Tab label="Education" {...a11yProps(3)} />
@@ -99,23 +100,115 @@ export default function SimpleTabs() {
                     </CardContent>
                 </Card>
             </TabPanel>
-            <TabPanel value={value} index={1}>
-                <Grid container spacing={3}>
+            <TabPanel value={value} index={1} id='appTab'>
+                <Grid container spacing={2}>
                     <Card className={classes.root} id='apCard'>
-                        <CardContent>
-                            <Typography>Hello</Typography>
-                        </CardContent>
+                        <Card className={classes.root}>
+                            <CardActionArea>
+                               
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Patient First
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        Patient First is a health data collection app. It allows users to quickly and easily upload health-related data, view trends and share with their primary care providers. Allowing for providers to have more data on a patient’s daily health trends to better diagnose/treat their conditions. This application uses React, MongoDb and Passport.Js.  
+                                                </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary">
+                                    GitHub
+                                 </Button>
+                                <Button size="small" color="primary">
+                                    Live Site
+                                </Button>
+                            </CardActions>
+                        </Card>
                     </Card>
-                    <Card className={classes.root}>
-                        <CardContent>
-                            <Typography>Hello</Typography>
-                        </CardContent>
+                    <Card className={classes.root} id='apCard'>
+                        <Card className={classes.root}>
+                            <CardActionArea>
+                                <CardMedia
+                                    className={classes.media}
+                                    image="/static/images/cards/contemplative-reptile.jpg"
+                                    title="Contemplative Reptile"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        iPlaylist
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        iPlaylist is a fully customizable web application where users can create their own playlists and contribute to the community playlist. Users are able to sign up, search for their favorite songs, create unique playlists, add them to a public playlist, and upvote and downvote songs.
+                                        Uses: Javascript, JQuery, mySQL, NodeJs, Passport.Js, NodeJs, Deezer API
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary">
+                                    GitHub
+                                 </Button>
+                                <Button size="small" color="primary" href=''>
+                                    Live Site
+                                </Button>
+                            </CardActions>
+                        </Card>
                     </Card>
-                    <Card className={classes.root}>
-                        <CardContent>
-                            <Typography>Hello</Typography>
-                        </CardContent>
+                    <Card className={classes.root} id='apCard'>
+                        <Card className={classes.root}>
+                            <CardActionArea>
+                                <CardMedia
+                                    className={classes.media}
+                                    image="/static/images/cards/contemplative-reptile.jpg"
+                                    title="Contemplative Reptile"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        WebScrape
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                    This application uses Cheerio to collect articles from the Sports Section of the New York Times. The articles are then stored in the Mongo Database as documents. Express allows the application to display the information that is in the database. Once displayed, the user can saved articles and add/delete comments that are associated with the given article.                                        </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary">
+                                    GitHub
+                                 </Button>
+                                <Button size="small" color="primary" href=''>
+                                    Live Site
+                                </Button>
+                            </CardActions>
+                        </Card>
                     </Card>
+
+                </Grid>
+                <Grid container spacing={3}>
+                <Card className={classes.root} id='apCard'>
+                        <Card className={classes.root}>
+                            <CardActionArea>
+                                <CardMedia
+                                    className={classes.media}
+                                    image="/static/images/cards/contemplative-reptile.jpg"
+                                    title="Contemplative Reptile"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        WebScrape
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                    This application uses Cheerio to collect articles from the Sports Section of the New York Times. The articles are then stored in the Mongo Database as documents. Express allows the application to display the information that is in the database. Once displayed, the user can saved articles and add/delete comments that are associated with the given article.                                        </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary">
+                                    GitHub
+                                 </Button>
+                                <Button size="small" color="primary" href=''>
+                                    Live Site
+                                </Button>
+                            </CardActions>
+                        </Card>
+                    </Card>
+
                 </Grid>
 
             </TabPanel>
