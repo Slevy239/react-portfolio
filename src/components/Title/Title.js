@@ -15,7 +15,7 @@ class Title extends Component {
             <div>
                 <Jumbotron>
                     <Container>
-                        <h1>Full Stack Web Developer</h1>
+                        <h1 id='title'>Full Stack Web Developer</h1>
                     </Container>
                 </Jumbotron>
 
