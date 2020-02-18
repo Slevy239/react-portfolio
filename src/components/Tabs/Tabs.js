@@ -98,12 +98,7 @@ export default function SimpleTabs() {
                         <Typography variant="h6" component="h4">
                             <Box lineHeight={2.5} m={1}>
 
-                                Motivated Full Stack Web Developer with a strong background in
-                                communications. Brings hard work and dedication inspired by
-                                encountering problems and finding an effective solution. Strong
-                                collaboration skills from previous professional experience. Excels
-                                at customer service and finding solutions to every situation in
-                                the workplace.
+                                Motivated Full Stack Web Developer with a strong background in communications. Brings hard work and dedication inspired by encountering problems and finding an effective solution. Strong collaboration skills from previous professional experience. Excels at customer service and finding solutions to every situation in the workplace.
                             </Box>
                         </Typography>
                     </CardContent>
