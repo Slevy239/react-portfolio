@@ -347,6 +347,7 @@ export default function SimpleTabs() {
                 <Grid container spacing={3}>
                     <Card id='EdCard'>
                         <CardContent>
+                            <img src='https://sportslogohistory.com/wp-content/uploads/2018/02/villanova_wildcats_2004-pres-aa.png'></img>
                             <Typography gutterBottom variant="h4" component="h4">
                                 Villanova University
               </Typography>
@@ -370,6 +371,8 @@ export default function SimpleTabs() {
                 <Grid container spacing={3}>
                     <Card id='EdCard'>
                         <CardContent>
+                        <img src='https://media-exp1.licdn.com/dms/image/C4E0BAQG7z5yNmEEVfQ/company-logo_200_200/0?e=2159024400&v=beta&t=_OP_f1RTYW8kElhOGvb3hf_tOmJrVP6Gggu64mcfVKc'></img>
+
                             <Typography gutterBottom variant="h4" component="h4">
                                 University of Pennsylvania
               </Typography>
