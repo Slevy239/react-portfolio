@@ -246,9 +246,10 @@ h1 {
 #expTab,
 #edTab,
 #simple-tabpanel-4,
-#simple-tabpanel-0 {
+#simple-tabpanel-0,
+.makeStyles-root-125 {
   color: white;
-  background-color: #35495e;
+  background-color: #35495e ;
 }
 body {
   background-color: #35495e !important;
