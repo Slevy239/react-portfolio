@@ -94,7 +94,6 @@ export default function SimpleTabs() {
                             About Me
             </Typography>
                         <hr></hr>
-                        <br></br>
                         <Typography variant="h6" component="h4">
                             <Box lineHeight={2.5} m={1}>
 
@@ -108,7 +107,6 @@ export default function SimpleTabs() {
                 <Typography variant="h3" component="h2" id="appTitle">
                     Deployed Applications
         </Typography>
-                <br></br>
                 <hr></hr>
                 <div id='appContainer'>
                     <Grid container spacing={2}>
@@ -288,7 +286,7 @@ export default function SimpleTabs() {
                         </Card>
 
                     </Grid>
-            </div>
+                </div>
             </TabPanel>
             <TabPanel value={value} index={2} id="expTab">
                 <Typography variant="h3" component="h2" id="appTitle">
@@ -300,9 +298,10 @@ export default function SimpleTabs() {
                     <Card className={classes.root} id="expCard">
                         <CardContent>
                             <Typography variant="h12" component="h6">June 2017 – Current</Typography>
-                            <Typography gutterBottom variant="h4" component="h4" id='Company'>Crowded Castle Brewing Company</Typography>
+                            <Typography gutterBottom variant="h4" component="h4" id='Company'>Crowded Castle B.C.</Typography>
                             <Typography gutterBottom variant="h5" component="h2">Bartender</Typography>
-                            <Typography>
+                            <Typography id='detail'>
+                                <hr></hr>
                                 Promote, manage and book musicians for private events. Track
                                 inventory with Microsoft Excel.
                             </Typography>
@@ -313,7 +312,8 @@ export default function SimpleTabs() {
                             <Typography variant="h12" component="h6">October 2018 - May 2019</Typography>
                             <Typography gutterBottom variant="h4" component="h4" id='Company'>Quench USA Inc.</Typography>
                             <Typography gutterBottom variant="h5" component="h2">Scheudling Specialist</Typography>
-                            <Typography>
+                            <Typography id='detail'>
+                                <hr></hr>
                                 Handled technician scheduling for large metropolitan markets around the U.S. Primarily used
                                       spreadsheets to handle and manage schedule data. Worked in groups to tackle appointment backlog
                                       across multiple markets. Relayed information about products to technicians and customers. Gave
@@ -326,7 +326,8 @@ export default function SimpleTabs() {
                             <Typography variant="h12" component="h6">September 2012 – May 2016</Typography>
                             <Typography gutterBottom variant="h4" component="h4" id='Company'>Paoli Pharmacy</Typography>
                             <Typography gutterBottom variant="h5" component="h2">Pharmacy Technician</Typography>
-                            <Typography>
+                            <Typography id='detail'>
+                                <hr></hr>
                                 Managed inventory and prescriptions through pharmacy software. Assisted pharmacist with filling
                                 prescriptions. Aided customers with over-the-counter products. Built relationships with return
                                 patrons. Learned fundamental customer service and communication skills.
@@ -355,7 +356,7 @@ export default function SimpleTabs() {
                             <Typography gutterBottom variant="h5" component="h5">
                                 Bachelor of Liberal Arts in Communication
               </Typography>
-                            <Typography>
+                            <Typography id='detail'>
                                 <Box lineHeight={2} m={1}>
                                     Focus in Media Studies. Produced audio for ‘Sankofa’, a student
                                     run film production that won Gold at the 2019 Student Academy
@@ -378,7 +379,7 @@ export default function SimpleTabs() {
                             <Typography gutterBottom variant="h5" component="h5">
                                 Coding Boot Camp
               </Typography>
-                            <Typography>
+                            <Typography id='detail'>
                                 <Box lineHeight={2} m={1}>
 
                                     A 24-week intensive program focused on gaining technical
