@@ -110,183 +110,185 @@ export default function SimpleTabs() {
         </Typography>
                 <br></br>
                 <hr></hr>
-                <Grid container spacing={2}>
-                    <Card className={classes.root} id="apCard">
-                        <CardActionArea>
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Patient First
+                <div id='appContainer'>
+                    <Grid container spacing={2}>
+                        <Card className={classes.root} id="apCard">
+                            <CardActionArea>
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Patient First
                                     </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="textPrimary"
-                                    component="p"
-                                >
-                                    <Box lineHeight={2} m={1}>
+                                    <Typography
+                                        variant="body2"
+                                        color="textPrimary"
+                                        component="p"
+                                    >
+                                        <Box lineHeight={2} m={1}>
 
-                                        Patient First is a health data collection app. It allows
-                                        users to quickly and easily upload health-related data, view
-                                        trends and share with their primary care providers. Allowing
-                                        for providers to have more data on a patient’s daily health
-                                        trends to better diagnose/treat their conditions. This
-                                        application uses React, MongoDb and Passport.Js.
+                                            Patient First is a health data collection app. It allows
+                                            users to quickly and easily upload health-related data, view
+                                            trends and share with their primary care providers. Allowing
+                                            for providers to have more data on a patient’s daily health
+                                            trends to better diagnose/treat their conditions. This
+                                            application uses React, MongoDb and Passport.Js.
                                     </Box>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary" href='https://github.com/maleszewskid/Project-3'>
-                                GitHub
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary" href='https://github.com/maleszewskid/Project-3'>
+                                    GitHub
                 </Button>
-                            <Button size="small" color="primary" href='https://patient-first.herokuapp.com/'>
-                                Live Site
+                                <Button size="small" color="primary" href='https://patient-first.herokuapp.com/'>
+                                    Live Site
                 </Button>
-                        </CardActions>
-                    </Card>
-                    <Card className={classes.root} id="apCard">
-                        <CardActionArea>
+                            </CardActions>
+                        </Card>
+                        <Card className={classes.root} id="apCard">
+                            <CardActionArea>
 
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    iPlaylist
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        iPlaylist
                   </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="textPrimary"
-                                    component="p"
-                                >
-                                    <Box lineHeight={2} m={1}>
+                                    <Typography
+                                        variant="body2"
+                                        color="textPrimary"
+                                        component="p"
+                                    >
+                                        <Box lineHeight={2} m={1}>
 
-                                        iPlaylist is a fully customizable web application where
-                                        users can create their own playlists and contribute to the
-                                        community playlist. Users are able to sign up, search for
-                                        their favorite songs, create unique playlists, add them to a
-                                        public playlist, and upvote and downvote songs. Uses:
-                                        Javascript, JQuery, mySQL, NodeJs, Passport.Js, NodeJs,
-                                        Deezer API
+                                            iPlaylist is a fully customizable web application where
+                                            users can create their own playlists and contribute to the
+                                            community playlist. Users are able to sign up, search for
+                                            their favorite songs, create unique playlists, add them to a
+                                            public playlist, and upvote and downvote songs. Uses:
+                                            Javascript, JQuery, mySQL, NodeJs, Passport.Js, NodeJs,
+                                            Deezer API
                                         </Box>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary" href='https://github.com/Slevy239/iPlaylist'>
-                                GitHub
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary" href='https://github.com/Slevy239/iPlaylist'>
+                                    GitHub
                 </Button>
-                            <Button size="small" color="primary" href="https://iplaylist-2019.herokuapp.com/login">
-                                Live Site
+                                <Button size="small" color="primary" href="https://iplaylist-2019.herokuapp.com/login">
+                                    Live Site
                 </Button>
-                        </CardActions>
-                    </Card>
-                    <Card className={classes.root} id="apCard">
-                        <CardActionArea>
+                            </CardActions>
+                        </Card>
+                        <Card className={classes.root} id="apCard">
+                            <CardActionArea>
 
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    GoogleBookSearch
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        GoogleBookSearch
                   </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="textPrimary"
-                                    component="p"
-                                >
-                                    <Box lineHeight={2} m={1}>
-                                        GoogleBookSearch creates readings lists out of an API created in this application. Using React router, this application is a single page application with dynamic components Users are able to manipulate books to add, save and delete them from a given list.
+                                    <Typography
+                                        variant="body2"
+                                        color="textPrimary"
+                                        component="p"
+                                    >
+                                        <Box lineHeight={2} m={1}>
+                                            GoogleBookSearch creates readings lists out of an API created in this application. Using React router, this application is a single page application with dynamic components Users are able to manipulate books to add, save and delete them from a given list.
                                     </Box>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary" href='https://github.com/Slevy239/GoogleBookSearch'>
-                                GitHub
-                </Button>
-                            <Button size="small" color="primary" href="https://react-bookshelf2020.herokuapp.com/">
-                                Live Site
-                </Button>
-                        </CardActions>
-                    </Card>
-                </Grid>
-                <Grid container spacing={3}>
-                    <Card className={classes.root} id="apCard">
-                        <CardActionArea>
-
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Clicky Game
                                     </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="textPrimary"
-                                    component="p"
-                                >
-                                    <Box lineHeight={2} m={1}>
-                                        To begin, click an image and the first score is recored. Then the images get shuffled and the user has to pick an image that has previously not been clicked. This will continue until there are no more options left.
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary" href='https://github.com/Slevy239/GoogleBookSearch'>
+                                    GitHub
+                </Button>
+                                <Button size="small" color="primary" href="https://react-bookshelf2020.herokuapp.com/">
+                                    Live Site
+                </Button>
+                            </CardActions>
+                        </Card>
+                    </Grid>
+                    <Grid container spacing={3}>
+                        <Card className={classes.root} id="apCard">
+                            <CardActionArea>
+
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Clicky Game
+                                    </Typography>
+                                    <Typography
+                                        variant="body2"
+                                        color="textPrimary"
+                                        component="p"
+                                    >
+                                        <Box lineHeight={2} m={1}>
+                                            To begin, click an image and the first score is recored. Then the images get shuffled and the user has to pick an image that has previously not been clicked. This will continue until there are no more options left.
                                     </Box>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary" href='https://github.com/Slevy239/Clicky-Game'>
-                                GitHub
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary" href='https://github.com/Slevy239/Clicky-Game'>
+                                    GitHub
                 </Button>
-                            <Button size="small" color="primary" href="https://clickgame-2020.herokuapp.com/">
-                                Live Site
+                                <Button size="small" color="primary" href="https://clickgame-2020.herokuapp.com/">
+                                    Live Site
                 </Button>
-                        </CardActions>
-                    </Card>
-                    <Card className={classes.root} id="apCard">
-                        <CardActionArea>
+                            </CardActions>
+                        </Card>
+                        <Card className={classes.root} id="apCard">
+                            <CardActionArea>
 
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Eat Da Burger!
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Eat Da Burger!
                                     </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="textPrimary"
-                                    component="p"
-                                >
-                                    <Box lineHeight={2} m={1}>
-                                        A NodeJs, Express, Handlebars, and MySQL application that allows users to create items, store it in the database and update it's state.                                    </Box>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary" href='https://github.com/Slevy239/burger'>
-                                GitHub
-                </Button>
-                            <Button size="small" color="primary" href="https://eat-a-burger-2019.herokuapp.com/">
-                                Live Site
-                </Button>
-                        </CardActions>
-                    </Card>
-                    <Card className={classes.root} id="apCard">
-                        <CardActionArea>
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2">
-                                    Friend Finder
+                                    <Typography
+                                        variant="body2"
+                                        color="textPrimary"
+                                        component="p"
+                                    >
+                                        <Box lineHeight={2} m={1}>
+                                            A NodeJs, Express, Handlebars, and MySQL application that allows users to create items, store it in the database and update it's state.                                    </Box>
                                     </Typography>
-                                <Typography
-                                    variant="body2"
-                                    color="textPrimary"
-                                    component="p"
-                                >
-                                    <Box lineHeight={2} m={1}>
-                                        This application works as a dating app, with 10 questions that assess the compatibility with an individual who has already completed the survey. Once the survey is completed, the users input is added to the API for future users to match. While this information is added, the user gets matched with someone who is already in the API, a picture and their name is presented.
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary" href='https://github.com/Slevy239/burger'>
+                                    GitHub
+                </Button>
+                                <Button size="small" color="primary" href="https://eat-a-burger-2019.herokuapp.com/">
+                                    Live Site
+                </Button>
+                            </CardActions>
+                        </Card>
+                        <Card className={classes.root} id="apCard">
+                            <CardActionArea>
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Friend Finder
+                                    </Typography>
+                                    <Typography
+                                        variant="body2"
+                                        color="textPrimary"
+                                        component="p"
+                                    >
+                                        <Box lineHeight={2} m={1}>
+                                            This application works as a dating app, with 10 questions that assess the compatibility with an individual who has already completed the survey. Once the survey is completed, the users input is added to the API for future users to match. While this information is added, the user gets matched with someone who is already in the API, a picture and their name is presented.
                                     </Box>
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                        <CardActions>
-                            <Button size="small" color="primary" href='https://github.com/Slevy239/FriendFinder'>
-                                GitHub
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                            <CardActions>
+                                <Button size="small" color="primary" href='https://github.com/Slevy239/FriendFinder'>
+                                    GitHub
                 </Button>
-                            <Button size="small" color="primary" href="https://nameless-gorge-79367.herokuapp.com/">
-                                Live Site
+                                <Button size="small" color="primary" href="https://nameless-gorge-79367.herokuapp.com/">
+                                    Live Site
                 </Button>
-                        </CardActions>
-                    </Card>
+                            </CardActions>
+                        </Card>
 
-                </Grid>
+                    </Grid>
+            </div>
             </TabPanel>
             <TabPanel value={value} index={2} id="expTab">
                 <Typography variant="h3" component="h2" id="appTitle">
