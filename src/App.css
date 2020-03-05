@@ -249,7 +249,7 @@ h1 {
 #simple-tabpanel-0,
 .makeStyles-root-125 {
   color: white;
-  background-color: #35495e ;
+  background-color: #35495e;
 }
 body {
   background-color: #35495e !important;
@@ -272,4 +272,18 @@ p#detail {
   letter-spacing: 0.04938em;
   color: black;
   padding-top: 5px;
+}
+
+@media screen and (max-width: 850px) {
+  .jumbotron {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .makeStyles-drawerHeader-8 {
+    background-color: black;
+  }
+  .MuiAppBar-positionFixed {
+    padding-bottom: 40px;
+  }
 }
