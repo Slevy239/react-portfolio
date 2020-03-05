@@ -274,6 +274,10 @@ p#detail {
   padding-top: 5px;
 }
 
+.jumbotron {
+  padding-top: 0%;
+}
+
 @media screen and (max-width: 850px) {
   .jumbotron {
     display: none;
@@ -286,4 +290,7 @@ p#detail {
   .MuiAppBar-positionFixed {
     padding-bottom: 40px;
   }
+}
+.makeStyles-drawerHeader-8 {
+  min-height: 0px !important;
 }
