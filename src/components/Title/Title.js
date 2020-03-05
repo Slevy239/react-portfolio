@@ -5,6 +5,7 @@ import 'react-mdl/extra/material.js';
 import { createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 import { Typography } from '@material-ui/core';
+import Animate from '../Animate/animation'
 
 const theme = createMuiTheme({
   palette: {
@@ -29,7 +30,9 @@ class Title extends Component {
                     <Container>
                         <div id='Background'>
                         {/* <h1 id='title'>Full Stack Web Developer</h1> */}
-                        <Typography>Full Stack Web Developer</Typography>
+                        <Animate>
+                        {/* <Typography>Full Stack Web Developer</Typography> */}
+                        </Animate>
                         </div>
                     </Container>
                 </Jumbotron>
